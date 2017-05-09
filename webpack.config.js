@@ -1,25 +1,27 @@
-var webpack =require('webpack');
-    path = require('path');
+var webpack = require('webpack');
+var path = require('path');
+
 
 
 var config = {
-    entry:path.resolve(__dirname,"src")+"/app/index.js",
+    entry: path.resolve(__dirname,'src') + '/app/index.js',
     output: {
-        path:path.resolve(__dirname,"dist") + "/app",
-        filename:"bundle.js",
-        publicPath:"/app"
+        path:path.resolve(__dirname,'dist') + '/app',
+        filename: 'bundle.js',
+        publicPath: '/app/'
     },
-module:{
-  loaders:[
-      {
-          test:/\.js?/,
-          include:path.resolve(__dirname,"src")+"/app/index.js",
-          loaders:"babel-loader",
-          query: {
-              presets:['react','es2015','stage-2']
-          }
-      }
-  ]
-}
+    module: {
+        loaders: [
+            {
+                test: /\.js?/,
+                include:path.resolve(__dirname,'src'),
+                loader: 'babel-loader',
+                query: {
+                    presets: ['react', 'es2015', 'stage-2']
+                }
+            }
+        ]
+    }
 };
-module.exports=config;
+
+module.exports = config;
