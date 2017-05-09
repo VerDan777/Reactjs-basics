@@ -13,7 +13,5 @@ export class Home extends React.Component {
         );
     }
   
-}
-  Home.propTypes= {
-        name:React.propTypes.string,
-    };
+};
+ 
