@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
-
+var dist;
 
 var config = {
     entry: path.resolve(__dirname,'src') + '/app/index.js',
