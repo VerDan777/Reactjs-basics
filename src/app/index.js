@@ -13,18 +13,17 @@ import {Footer} from "./components/Footer";
          <div className="container">
              <div className="row">
                  <div className="col-xs-10 col-xs-offset-1">
-             <Header/>
+             <Header row="name"/>
                 </div>
              </div>
               <div className="row">
                  <div className="col-xs-10 col-xs-offset-1">
-             <Home/>
-             <Home name={"Daniil"} age={18} user={user}/>
+                  <Home name={"Daniil"} age={18} status={0}/>
                 </div>
              </div>
              <div className="row">
                  <div className="col-xs-10 col-xs-offset-1" >
-                     <Footer/>
+                     <Footer list="this list" name="Daniil"/>
                 </div>
                 </div>
              </div>
