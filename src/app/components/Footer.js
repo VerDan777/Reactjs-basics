@@ -8,11 +8,7 @@ export class Footer extends React.Component {
         }
      
     }
-       Click(){
-            this.setState({
-                list:this.state.list="New list"
-            })
-        }
+    
     render() {
         return(
         <div className="site-footer">

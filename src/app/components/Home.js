@@ -7,8 +7,9 @@ export class Home extends React.Component {
             age:props.age,
             status:0
         }
+        setTimeout(()=>{this.setState({status:this.state.status=this.state.status+1})},1000);
     }
-     
+
     OnMakeChanged() {
         this.setState({
             age:this.state.age-=3,
